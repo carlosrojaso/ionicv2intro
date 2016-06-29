@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!--{{{-->
+  <meta charset="utf-8">
+
+  <title>Ionic: V2 and beyond</title>
+
+  <meta name="description" content="A overview of Ionic 2">
+  <meta name="author" content="Mike Hartington">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/ionic.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/oceanicnext.css">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Printing and PDF exports -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<!--}}}-->
+
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section>
+        <h1>#HAppsChile</h1>
+      </section>
+
+      <section>
+        <img src="img/ionic-sdk-landscape-white-1024.png" class="logo" width="450" style="display:block; margin:auto; margin-bottom:100px;">
+        <h1 style="font-size:75px">V2</h1>
+        <p>Carlos Rojas | <a target="_blank" href="https://twitter.com/carlosrojas_o">@carlosrojaso</a></p>
+      </section>
+      
+      <section>
+ <pre><code data-trim class="javascript">
+  {
+    name: 'Carlos Rojas',
+    twitter: '@carlosrojas_o',
+    github: 'https://github.com/carlosrojaso'
+    jobs: [
+        'Consultor',
+        'Entrenamiento',
+        'Desarrollador'    
+    ],
+    organizer: [
+        'http://www.meetup.com/es-ES/Hybrid-Apps-Chile/'   
+    ]
+  }
+</code>
+</pre>
+<img src="img/me.jpg"   style="position: absolute; top:-80px; right:0px; max-width: 280px;">
+</section>
+        
+         
+        <section>
+          <div> 
+          <img src="img/meetups/1.png">
+          <img src="img/meetups/2.png">
+          <img src="img/meetups/3.png">
+          <img src="img/meetups/4.png">
+          </div>
+        </section>
+        
+        <section data-background="white">
+          <img src="img/showcase/logo.png" alt="showcase">
+          <p style="text-align: center">www.sponzor.me</p>
+        </section>
+      <section>
+        <h3>Ionic 2 esta en 2.0.0-beta.10</h3>
+        <p>Estamos proximo al Release Candidate.</p>
+      </section>
+
+      <section data-background="#4f8ff7">
+        
+        <section>
+          <div style="
+            background: url(img/ionic-logo.png) no-repeat center center;
+            background-size: 390px 390px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4; z-index: -1;"></div>
+          <h3 style="font-size:80px;color:white">Ionic V1!</h3>
+          <p style="color:white">SDK para desarrollar Apps Hibridas</p>
+          <p style="color:white">Enfocado en movil primero.</p>
+          <p style="color:white">Sass para facil personalización.</p>
+          <p style="color:white">Angular para estructurar el codigo.</p>
+          
+        </section>
+        
+        <section>
+          <h3 style="color:white">Los SDKs Nativos...</h3>
+          <h2 style="font-size:2.2em;color:white">Son Grandiosos!!</h2>
+          <p style="margin:30px auto 20px auto; width: 600px;color:white"">
+            UI Comun, APIs, Vistas, Navegación, Historial de Stack, Transiciones, Interacciones, Gestos, etc.
+          </p>
+          <img src="img/native-sdk.png" style="width:66%">
+        </section>
+        
+        
+        <section data-background="white">
+          <img src="img/ionic-logo.svg" style="width:750px;">
+        </section>
+        
+        <section>
+          <h3 style="margin:0; font-size:32px;color:white">Tecnologias moviles que tu ya</h3>
+          <h2 style="font-size: 85px;color:white">Conoces &amp; Amas</h2>
+          <div style="margin-top: 30px">
+            <img src="img/html.png" class="logo" width="185" height="260">
+            <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
+            <img src="img/js.png" class="logo" width="185" height="260">
+          </div>
+          <p style="margin-top: 30px; opacity: 0.6;color:white">
+            (Te sientes como en casa)
+          </p>
+        </section>
+
+
+        <section data-background="img/angular-bg.png">
+          <h3 style="font-size:42px; margin:0;color:white">Superpoderes por</h3>
+          <h2 style="font-size:90px;color:white;">Angular</h2>
+          <p style="margin-top:60px;color:white;"><strong>Extiende el vocabulario HTML</strong></p>
+          <p style="color:white;">Probado para un desarrollo a <strong>gran escala</strong></p>
+          <p style="color:white;">Componentes UI usando <strong>Directivas &amp; Servicios</strong></p>
+          </ul>
+        </section>
+
+        <section data-background="white">
+          <img src="img/native.png">
+          <h2>Enfocado en Nativo</h2>
+          <ul>
+            <li>Siguiendo el modelo de los SDKs Nativos.</li>
+            <li>Construido para trabajar con Cordova.</li>
+          </ul>
+        </section>
+
+        <section data-background="white">
+          <img src="img/performance.png">
+          <h2>Obsesionado con el rendimiento</h2>
+            <ul>
+              <li>Animaciones acelerada por Hardware.</li>
+              <li>Minima manipulación del DOM.</li>
+              <li>Se removio el tap delay de 300ms.</li>
+            </ul>
+        </section>
+
+        <section data-background="white">
+          <img src="img/design.png">
+          <h2 style="margin-top:0px;">CSS Plano</h2>
+          <ul>
+            <li>Sistema visual cohesivo</li>
+            <li>Claro y simple</li>
+            <li>Facil de personalizar</li>
+            <li>Stand-alone CSS (independiente del Javascript en Ionic)</li>
+          </ul>
+        </section>
+
+
+        <section data-background="img/sass.png">
+          <h2 style="font-size:3em; text-transform: none;color:white">Sass!</h2>
+          <p style="color:white">CSS generado desde el <strong>preprocesador Sass</strong></p>
+          <p style="color:white">Rapidamente da a tus apps su propia <strong>Apariencia</strong></p>
+          <p style="color:white">CSS diseñado para ser <strong>facilmente sobreescrito</strong></p>
+          <p style="color:white"><strong>Basado en variables</strong> con configuraciones por defecto</p>
+        </section>
+        
+        <section>
+          <blockquote style="color:white;font-size:2em;">
+            Ionic parece estar tomandose el mundo :)
+          </blockquote>
+        </section>
+        
+        <section>
+          <h3 style="margin:0; font-size:60px; color:white;">ShowCase</h3>
+          <a href="http://showcase.ionicframework.com/">http://showcase.ionicframework.com/</a>
+          <img src="img/showcase.png" alt="showcase">
+        </section>
+        
+        <section>
+          <h3 style="margin:0; font-size:60px;color:white;">IBM Mobile</h3>
+          <a href="http://showcase.ionicframework.com/">http://www.ibm.com/mobilefirst/</a>
+          <img src="img/showcase/ibm.png" alt="showcase">
+        </section>
+        
+        
+        <section>
+          <h3 style="margin:0; font-size:60px;color:white;">Apps</h3>
+          <div class="apps">
+            <img src="img/showcase/just.jpeg" width="230" alt="showcase">
+            <img src="img/showcase/song.jpg" width="230" alt="showcase">
+            <img src="img/showcase/sworkit.png" width="230" alt="showcase">
+            <img src="img/showcase/unnamed.jpg" width="230" alt="showcase">
+          </div>
+        </section>
+      </section>
+
+      <section  data-background="img/ionic-stats.png">
+          <h3>Algunos datos...</h3>
+          <p>De los 34 más populares proyectos Open Source (20,000+ estrellas en GitHub)</p>
+          <p>UN MILLON de apps construidas con el SDK</p>
+          <p>105 Meetup Groups alrededor del mundo</p>
+          <p>Ionic apps top app store charts</p>
+          <p>Usado en todos lados desde
+            <br>Compañias Fortune 50 hasta compañias YC/TechStars</p>
+      </section>
+
+      <section>
+        
+          <h2 style="color:white"> Ionic V1 es grandioso</h2>
+          <p class="fragment">Pero muchas cosas han cambiado desde su release.</p>
+        
+      </section>
+
+      <section>
+        <h3>2 años es un largo tiempo en tecnologia.</h3>
+      </section>
+
+      <section>
+        <div flex>
+          <div col>
+            <h3>Muchos cambios</h3>
+            <p>Dispositivos mas rapidos y mejores</p>
+            <p>Menos dispositivos de gama baja</p>
+            <p>Amplia variedad de APIs en Internet!</p>
+            <p>Mejoras en los motores web</p>
+          </div>
+          <div col center>
+            <img src="img/alot-has-changed.png">
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>V2 es el mismo framework poderoso, pero construido para el futuro</h2>
+        <img src="img/ionic2.png" width="250" alt="">
+        
+      </section>
+
+      <!-- Goals -->
+      <section>
+        <div flex>
+          <div col>
+            <h3>v2 Apunta a</h3>
+            <p>Simplicidad</p>
+            <p>Continuidad de Plataforma</p>
+            <p>Rendimiento</p>
+            <p>Libertad creativa</p>
+            <p>Escribir una vez</p>
+          </div>
+          <div col center>
+            <img src="img/goals.png">
+          </div>
+        </div>
+        
+      </section>
+
+      <section>
+        <p>Hablar es barato</p>
+        <p>Veamos algo de codigo</p>
+      </section>
+
+      <!-- Simplicity - attribute -->
+      <section>
+        <section>
+          <h2>Simplicidad</h2>
+          <p>Usando propiedades en lugares de clases</p>
+        </section>
+
+        <section>
+          <h3>V1 Buttons</h3>
+          <pre><code class="html">
+<a class="button button-positive"></a>
+<a class="button button-outlined button-balanced"></a>
+<a class="button button-clear button-dark"></a>
+<a class="button button-assertive button-icon ion-close"></a>
+          </code></pre>
+
+
+        </section><!--}}}-->
+
+        <section><!--{{{-->
+          <h3>Clases pueden ser <br>complejas y desordenadas</h3>
+
+        </section><!--}}}-->
+
+        <section><!--{{{-->
+          <h3>Ahora se mueven a propiedades</h3>
+          <p>Facil de entender y menos markup</p>
+          <p>Facil de reemplazar con Clases</p>
+
+        </section><!--}}}-->
+
+        <section><!--{{{-->
+          <div class="flex">
+            <div class="code-left" style="margin-top:60px;">
+              <pre><code class="html">
+  <button></button>
+  &lt;a button primary&gt;&lt;/a&gt;
+  &lt;a button outlined secondar&gt;&lt;/a&gt;
+  &lt;a button clear dark&gt;&lt;/a&gt;
+  &lt;a button danger&gt;
+    &lt;icon close&gt;&lt;/icon&gt;
+  &lt;/a&gt;
+
+              </code></pre>
+            </div>
+          </div>
+        </section><!--}}}-->
+
+        
+<!--}}}-->
+
+        <section><!--{{{-->
+          <p>Ionic 2 usa propiedades en los elementos</p>
+          <p>Menos desorden, facil de entender, y facil de personalizar</p>
+          <p>No cambias como escribes tus estilos.</p>
+
+        </section><!--}}}-->
+      </section><!--}}}-->
+
+      <!-- Native UX - ios/md -->
+      <section>
+
+        <section>
+          <h2>UX cercana a Nativa</h2>
+          <p>Los diferentes modos de Ionic 2</p>
+        </section>
+
+        <section>
+          <h3>Continuidad de Plataforma</h3>
+          <p>iOS, Android, Windows10</p>
+          <p>Un codigo base</p>
+          <p>Mismas markup y clases</p>
+          <p>Interacciones personalizadas</p>
+          <img src="img/platformcont.png">
+        </section>
+
+        <section>
+          <h3>Icons</h3>
+          <div class="flex">
+
+            <div class="code-left">
+              <pre><code class="html">
+<ion-icon name="ionic"></ion-icon>
+<ion-icon name="logo-angular"></ion-icon>
+<ion-icon name="heart"></ion-icon>
+<ion-icon name="ionitron"></ion-icon>
+              </code></pre>
+            </div>
+
+            <div class="demo">
+              <div class="demo-buttons">
+                <button class="button" onclick="togglePlatform('icons', 'demo-ios', 'ios')"><i class="icon ion-social-apple"></i></button>
+                <button class="button" onclick="togglePlatform('icons', 'demo-md', 'android')"><i class="icon ion-social-android"></i></button>
+                <button class="button" onclick="togglePlatform('icons', 'demo-wp', 'windows')"><i class="icon ion-social-windows"></i></button>
+              </div>
+
+              <div class="demo-frame" id="icons">
+                <div class="demo-ios">
+                  <iframe src="dist/icon/" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Action Sheet</h3>
+          <div class="flex">
+            <div class="code-left">
+              <pre><code class="javascript">presentActionSheet() {
+  let actionSheet = ActionSheet.create({
+    title: 'Modify your album',
+    buttons: [
+      {
+        text: 'Destructive',
+        style: 'destructive',
+        handler: () => {
+          console.log('Destructive clicked');
+        }
+      },{
+        text: 'Archive',
+        handler: () => {
+          console.log('Archive clicked');
+        }
+      },{
+        text: 'Cancel',
+        style: 'cancel',
+        handler: () => {
+          console.log('Cancel clicked');
+        }
+      }
+    ]
+  });
+  this.nav.present(actionSheet);
+  }
+                </code></pre>
+            </div>
+            <div class="demo">
+              <div class="demo-buttons">
+                <button class="button" onclick="togglePlatform('action-sheet', 'demo-ios', 'ios')"><i class="icon ion-social-apple"></i></button>
+                <button class="button" onclick="togglePlatform('action-sheet', 'demo-md', 'android')"><i class="icon ion-social-android"></i></button>
+                <button class="button" onclick="togglePlatform('action-sheet', 'demo-wp', 'windows')"><i class="icon ion-social-windows"></i></button>
+
+              </div>
+
+              <div class="demo-frame" id="action-sheet">
+                <div class="demo-ios">
+                  <iframe src="dist/action-sheet/" frameborder="0"></iframe>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+        <!-- sidemenu -->
+        <section>
+          <h3>SideMenu</h3>
+          <div class="flex">
+            <div class="code-left">
+              <pre><code class="html">&lt;ion-menu [content]=&quot;content&quot;&gt;
+  &lt;ion-toolbar&gt;
+    &lt;ion-title&gt;Pages&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+  &lt;ion-content&gt;
+  &lt;/ion-content&gt;
+&lt;/ion-menu&gt;
+
+&lt;ion-nav id=&quot;nav&quot; #content [root]=&quot;loginPage&quot;&gt;&lt;/ion-nav&gt;
+              </code></pre>
+            </div>
+            <div class="demo">
+              <div class="demo-buttons">
+                <button class="button" onclick="togglePlatform('menu', 'demo-ios', 'ios')"><i class="icon ion-social-apple"></i></button>
+                <button class="button" onclick="togglePlatform('menu', 'demo-md', 'android')"><i class="icon ion-social-android"></i></button>
+                <button class="button" onclick="togglePlatform('menu', 'demo-wp', 'windows')"><i class="icon ion-social-windows"></i></button>
+
+              </div>
+
+              <div class="demo-frame" id="menu">
+                <div class="demo-ios">
+                  <iframe src="dist/menu" frameborder="0"></iframe>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+        </section>
+
+        <!-- navigation -->
+        <section>
+          <h3>Navegación</h3>
+          <div class="flex">
+            <div class="code-left">
+              <p>Construido usando clases de animación simple</p>
+              <p>Facil de cambiar y agregar nuevas animaciones</p>
+              <p>Simple push/pop metafora</p>
+            </div>
+            <div class="demo">
+              <div class="demo-buttons">
+                <button class="button" onclick="togglePlatform('navigation', 'demo-ios','ios')"><i class="icon ion-social-apple"></i></button>
+                <button class="button" onclick="togglePlatform('navigation', 'demo-md', 'android')"><i class="icon ion-social-android"></i></button>
+                <button class="button" onclick="togglePlatform('navigation', 'demo-wp', 'windows')"><i class="icon ion-social-windows"></i></button>
+              </div>
+
+              <div class="demo-frame" id="navigation">
+                <div class="demo-ios">
+                  <iframe src="dist/navigation/" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+
+          <h3>Altamente configurable</h3>
+
+          <pre><code class="javascript">
+  config: {
+    backButtonText: 'Go Back',
+    iconMode: 'ios',
+    modalEnter: 'modal-slide-in',
+    modalLeave: 'modal-slide-out',
+    tabbarPlacement: 'bottom',
+    pageTransition: 'ios',
+  }
+          </code></pre>
+          <p><a href="http://ionicframework.com/docs/v2/api/config/Config/" target="_blank">Config Docs</a></p>
+        </section>
+      </section>
+
+      <!-- Native UX pt 2 - navigation -->
+      <section>
+
+        <section>
+          <h2>Navegación</h2>
+          <p>Más robusta y poderosa</p>
+        </section>
+
+        <section>
+          <h3>V1's Routing</h3>
+          <pre><code class="javascript" data-trim>
+.config(function($stateProvider){
+  $stateProvider
+    .state('firstpage', {
+      url:'/firstpage',
+      templateUrl: 'firstpage.html'
+    })
+    .state('secondpage', {
+      url:'/secondpage',
+      templateUrl: 'secondpage.html'
+    })
+    .state('thirdpage', {
+      url:'/thirdpage/:id',
+      templateUrl: 'thirdpage.html'
+    });
+});
+          </code></pre>
+          <p>UI-Router</p>
+        </section>
+
+        <section>
+          <h3>No te provee la flexibilidad que necesitas</h3>
+          <p>Navegacion: experiencia de usuario</p>
+          <p>URLs no ofrecen eso</p>
+          <p>Developers <strong>Necesitan</strong> estar en control</p>
+        </section>
+
+        <section>
+          <h3>Push/Pop/Params</h3>
+          <div class="flex">
+
+            <div class="code-left">
+              <pre><code class="javascript">
+  import SecondPage from '../secondpage';
+  export class FirstPage {
+    constructor(
+    public nav: NavController) {};
+    pushState() {
+      this.nav.push(SecondPage)
+    };
+  };
+
+              </code></pre>
+            </div>
+
+            <div class="demo">
+              <div class="demo-buttons">
+                <button class="button" onclick="togglePlatform('params', 'demo-ios', 'ios')"><i class="icon ion-social-apple"></i></button>
+                <button class="button" onclick="togglePlatform('params', 'demo-md', 'android')"><i class="icon ion-social-android"></i></button>
+                <button class="button" onclick="togglePlatform('params', 'demo-wp', 'windows')"><i class="icon ion-social-windows"></i></button>
+              </div>
+
+              <div class="demo-frame" id="params">
+                <div class="demo-ios">
+                  <iframe src="dist/nav-params/" frameborder="0"></iframe>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <aside class="notes">
+            <li>Heavily inspired by native implimentations</li>
+            <li>Much more flexible an mature navigation pattern</li>
+          </aside>
+        </section>
+
+        <section>
+
+              <h3>Control Total</h3>
+              <p>Push pages en la pila de navegación</p>
+              <p>Pop pages fuera de la pila de navegación</p>
+              <p>Insert/Remove/Update</p>
+              <p>Crear un historial de app desde la nada</p>
+              <p>Actualizar la url como una opcion</p>
+
+        </section>
+
+      </section>
+
+      <!-- Tooling -->
+      <section>
+
+        <section>
+          <h2>Tooling para todo el mundo</h2>
+          <p>Construyendo Apps con el nuevo estandar</p>
+        </section>
+
+        <section>
+          <h3>JavaScript ha cambiado</h3>
+          <p>ES6 trae nuevas caracteristicas</p>
+          <p>Typescript construye encima de eso</p>
+          <p>Todo esto, te ayuda a desarrollar mas rapido</p>
+
+          <aside class="notes">
+            <li>ES5 has served us well</li>
+            <li>ES6 gives us many new features</li>
+            <p>Like javascript has grown up</p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>ES6</h3>
+          <p>Modular: Importa lo que necesitas</p>
+          <p>Scoping: <code>let</code> define el alcance de las variables</p>
+          <p>Promises: Construido dentro del lenguaje nativamente</p>
+          <p>Classes: Sintaxis simple para construir bloques</p>
+
+        </section>
+
+        <section>
+          <h3>Elige lo que es correcto</h3>
+          <p>Ionic soporta: ES6 o TS</p>
+          <p>Puedes enfocarte en escribir tu App</p>
+          <p>Nuestro sistema de build maneja todo el resto!</p>
+          <p>Este <em>"solo funciona"</em></p>
+        </section>
+
+      </section>
+  
+
+      <section>
+        <h3>Gracias!</h3>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      slideNumber: true,
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      maxScale: 1,
+      minScale: 1,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [{
+        src: 'lib/js/classList.js',
+        condition: function() {
+          return !document.body.classList;
+        }
+      }, {
+        src: 'plugin/markdown/marked.js',
+        condition: function() {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: 'plugin/markdown/markdown.js',
+        condition: function() {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        condition: function() {
+          return !!document.querySelector('pre code');
+        },
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: 'plugin/zoom-js/zoom.js',
+        async: true
+      }, {
+        src: 'plugin/notes/notes.js',
+        async: true
+      }]
+    });
+  </script>
+
+  <script>
+    function togglePlatform(target, version, platform) {
+      console.log(target, version, platform)
+      var demoTarget = $('#' + target + ' > div');
+      var demoFrame = $('#' + target + ' > div > iframe');
+      var currentSrc = demoFrame.attr('src');
+      var newSrc = currentSrc.split('?')[0] + '?ionicplatform=';
+      var currentPlatform = getPlatform(currentSrc);
+      demoFrame.attr('src', newSrc + platform);
+      console.log(demoTarget)
+      demoTarget.attr('class', version);
+      // demoTarget.addClass(version);
+    }
+
+    function getPlatform(iframeSrc) {
+      // return: 'ios' or android
+      if (iframeSrc.indexOf('android') > -1) {
+        return 'android';
+      }
+      return 'ios';
+    }
+  </script>
+</body>
+
+</html>
